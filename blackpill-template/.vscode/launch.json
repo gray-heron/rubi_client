@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "miDebuggerPath": "gdb-multiarch",
+            "MIMode": "gdb",
+            "debugServerArgs": "",
+            "targetArchitecture": "arm",
+            "stopAtEntry": true,
+            "preLaunchTask": "program",
+            "program": "${workspaceRoot}/build/template.elf",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "set target-async off",
+                    "ignoreFailures": true
+                },
+                {
+                    "text": "file '${workspaceRoot}/build/template.elf'"
+                },
+                {
+                    "text": "target remote 127.0.0.1:3333"
+                },
+                {
+                    "text": "monitor reset init"
+                }
+            ],
+            "externalConsole": false,
+            "cwd": "${workspaceRoot}",
+            "logging": {
+                "trace": true,
+                "traceResponse": true,
+                "engineLogging": true
+            }
+        }
+    ]
+}

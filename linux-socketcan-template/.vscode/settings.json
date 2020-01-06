@@ -1,0 +1,9 @@
+{
+    "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools",
+    "files.associations": {
+        "rubi.h": "c"
+    },
+    "cmake.debugConfig": {
+        "args": ["vcan1", "test_id"]
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "C_Cpp.formatting": "Disabled",
+    "clang-format.style": "{BasedOnStyle: LLVM, IndentWidth: 4, Standard: Cpp11, BreakBeforeBraces: Allman}",
+    "editor.formatOnSave": true,
+    "C_Cpp.errorSquiggles": "Enabled",
+}
