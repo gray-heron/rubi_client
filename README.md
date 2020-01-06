@@ -5,11 +5,11 @@
 
 This is a subproject of RUBI that implements the client side for the STM32F0,F1,F4 microcontrollers,
 and for Linux using the socketcan.
-General description of the system can be found in the [server repository](https://github.com/acriaer/rubi_server).
+A general description of the system can be found in the [server repository](https://github.com/acriaer/rubi_server).
 
 ## Usage example
 
-Here is how *main.c* may look like, when using RUBI to implement a simple weather station:
+Here is how *main.c* may look like when using RUBI to implement a simple weather station:
 
 ```C
 #include "rubi.h"
@@ -72,7 +72,7 @@ void main() {
   - `src` -- implementation of the core client features (like communication protocol)
   - `src_<platfotm>` -- platform-specific code (like CAN driver)
 
-## Buildting & running the Linux example
+## Building & running the Linux example
 This assumes the ROS is configured and rubi-server installed.
 ```bash
 # building
